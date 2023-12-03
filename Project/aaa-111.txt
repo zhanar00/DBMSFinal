@@ -1,0 +1,4 @@
+Username: aaa
+Gmail: aaa
+Password: 111
+Gender: javafx.scene.control.ToggleGroup@19ba1265

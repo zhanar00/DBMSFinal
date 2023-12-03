@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #044574;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.SignUp">
+    <children>
+        <Label fx:id="text" layoutX="46.0" layoutY="26.0" text="Technological Devolepment News" textFill="#dc0505">
+            <font>
+                <Font name="System Bold Italic" size="18.0" />
+            </font>
+        </Label>
+        <Button fx:id="SignUp" layoutX="247.0" layoutY="302.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="105.0" text="SignUp" textFill="#e70303">
+         <effect>
+            <Blend />
+         </effect></Button>
+        <TextField fx:id="Username" layoutX="211.0" layoutY="118.0" prefHeight="26.0" prefWidth="176.0" promptText="Username" />
+        <PasswordField fx:id="Password1" layoutX="212.0" layoutY="161.0" prefHeight="26.0" prefWidth="176.0" promptText="Password" />
+        <ImageView fx:id="image" fitHeight="115.0" fitWidth="150.0" layoutX="46.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../assets/news.png" />
+            </image>
+        </ImageView>
+      <RadioButton fx:id="Female" layoutX="151.0" layoutY="214.0" mnemonicParsing="false" text="Female" textFill="#f7f5f5">
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="Male" layoutX="276.0" layoutY="214.0" mnemonicParsing="false" text="Male" textFill="#f4f2f2" toggleGroup="$gender" />
+      <RadioButton fx:id="Other" layoutX="388.0" layoutY="214.0" mnemonicParsing="false" text="Other" textFill="#faf8f8" toggleGroup="$gender" />
+      <TextField fx:id="Email" layoutX="212.0" layoutY="254.0" prefHeight="26.0" prefWidth="176.0" promptText="hello@gmail.com" />
+      <Button fx:id="backButton" layoutX="539.0" layoutY="13.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="46.0" style="-fx-background-color: silver;" text="Login">
+         <effect>
+            <Blend />
+         </effect>
+      </Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,4 @@
+Username: poi
+Gmail: poi
+Password: 000
+Gender: javafx.scene.control.ToggleGroup@17d5b109
